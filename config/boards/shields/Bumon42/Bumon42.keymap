@@ -23,7 +23,7 @@
             &kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT   &mt RSHIFT SLASH
             &kp LCTRL &kp LGUI &kp LALT &lt RSE SPACE &lt LWR SPACE &kp BSLH   &lt FN RGUI  &kp C_MUTE
 			       >;
-          sensor-bindings = <&inc_dec_kp DN UP>;
+          sensor-bindings = <&inc_dec_kp DOWN UP>;
 
         };
 
@@ -34,7 +34,7 @@
             &kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT   &mt RSHIFT SLASH
             &kp LCTRL &lt FN RGUI &kp LALT  &kp SPACE &lt RSE SPACE &lt LWR SPACE  &lt FN RGUI &kp C_MUTE
              >;
-          sensor-bindings = <&inc_dec_kp DN UP>;
+          sensor-bindings = <&inc_dec_kp DOWN UP>;
         };
         raise_layer {
           bindings = <
@@ -48,8 +48,8 @@
         };
         lower_layer {
           bindings = <
-            &none &none  &none  &none  &none  &none    &none  &none    &none    &kp LBKT  &kp RBKT     &kp BSLH
-            &kp LEFT   &kp UP   &kp DOWN  &kp RIGHT   &none   &none   &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT &none
+            &none &kp UP  &none  &none  &none  &none    &none  &none    &none    &kp LBKT  &kp RBKT     &kp BSLH
+            &kp LEFT   &kp DOWN   &kp RIGHT  &none   &none   &none   &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT &none
             &kp LSHFT   &none    &none  &none   &none   &none    &none  &none  &none  &none     &kp RSHFT
             &none   &none   &none       &lt ADJ SPACE           &kp SPACE                   &none  &none  &none
 			       >;
