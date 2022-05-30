@@ -23,7 +23,7 @@
             &kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT   &mt RSHIFT SLASH
             &kp LCTRL &kp LGUI &kp LALT &lt RSE SPACE &lt LWR SPACE &kp BSLH   &lt FN RGUI  &kp C_MUTE
 			       >;
-          sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+          sensor-bindings = <&inc_dec_kp DN UP>;
 
         };
 
@@ -34,22 +34,22 @@
             &kp LSHFT   &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT   &mt RSHIFT SLASH
             &kp LCTRL &lt FN RGUI &kp LALT  &kp SPACE &lt RSE SPACE &lt LWR SPACE  &lt FN RGUI &kp C_MUTE
              >;
-          sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+          sensor-bindings = <&inc_dec_kp DN UP>;
         };
         raise_layer {
           bindings = <
             &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6  &kp N7  &kp N8  &kp N9 &kp N0  &kp DEL
-            &kp CAPS    &none  &none  &none  &none  &kp KP_MINUS  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT          &kp INS
+            &kp CAPS    &none  &none  &none  &none  &kp KP_MINUS  &kp HOME  &kp PG_UP  &kp PG_DN  &kp END     &kp INS
             &kp LSHFT          &none  &none  &none  &none &kp KP_PLUS  &none  &none  &none  &kp DOT          &kp RSHFT
             &none   &none   &none         &kp SPACE           &lt ADJ SPACE                 &none  &none  &none
 			       >;
-          sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+          sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
 
         };
         lower_layer {
           bindings = <
             &none &none  &none  &none  &none  &none    &none  &none    &none    &kp LBKT  &kp RBKT     &kp BSLH
-            &none   &none    &none  &none   &none   &none   &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT &none
+            &kp LEFT   &kp UP   &kp DOWN  &kp RIGHT   &none   &none   &kp MINUS  &kp EQUAL  &kp SEMI  &kp SQT &none
             &kp LSHFT   &none    &none  &none   &none   &none    &none  &none  &none  &none     &kp RSHFT
             &none   &none   &none       &lt ADJ SPACE           &kp SPACE                   &none  &none  &none
 			       >;
